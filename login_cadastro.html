@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Secret Santa - Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#C82A3A",
+                        "secondary": "#1E4620",
+                        "accent": "#FFD700",
+                        "background-light": "#F8F9FA",
+                        "background-dark": "#1a1a1a",
+                        "text-light": "#333333",
+                        "text-dark": "#F8F9FA",
+                        "text-secondary-light": "#6c757d",
+                        "text-secondary-dark": "#a0a0a0",
+                        "border-light": "#e0e0e0",
+                        "border-dark": "#333333",
+                        "input-bg-light": "#FFFFFF",
+                        "input-bg-dark": "#2a2a2a",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex flex-col mx-auto w-full max-w-md">
+<!-- HeaderImage Component -->
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden min-h-[180px] pt-10 px-4" data-alt="A festive abstract image with a gift box and a question mark, in red, green, and gold colors.">
+<img alt="Logo de caixa de presente com ponto de interrogação" class="h-24 w-24 mx-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtMwOCc0EKEbXHoptKlRluVN2PEFeqDWDAXapa3Y22RFk_q-hFx2yMGxfZ-1mo24v5R_f8S_zLSLobDDkVYOTzc2PQQa2_yTyLq9aze3yrnpuYCpD2l3Dnb4JmPQOoWIWyPVRzJiQjuE6qbaqt8Bi5zo6O9LXcXwQMMV3_P9AGX9RHMkASQC3Fr3FSiIOlfbyEJn8BqJaUZsTmdxhiCqi9fsfWMc8JWAcgJDSqKVHlYufpwtpVTd1ulCf-KVOgqWCS1mK5WygjCVm_"/>
+</div>
+<!-- HeadlineText Component -->
+<h2 class="text-text-light dark:text-text-dark tracking-tight text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">O mistério começa aqui!</h2>
+<!-- SegmentedButtons Component -->
+<div class="flex px-4 py-3">
+<div class="flex h-12 flex-1 items-center justify-center rounded-lg bg-gray-200/50 dark:bg-black/20 p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 has-[:checked]:bg-white dark:has-[:checked]:bg-input-bg-dark has-[:checked]:shadow-sm has-[:checked]:text-primary text-text-secondary-light dark:text-text-secondary-dark text-sm font-bold leading-normal transition-all duration-200">
+<span class="truncate">Cadastrar</span>
+<input checked="" class="invisible w-0" name="auth-toggle" type="radio" value="Cadastrar"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 has-[:checked]:bg-white dark:has-[:checked]:bg-input-bg-dark has-[:checked]:shadow-sm has-[:checked]:text-primary text-text-secondary-light dark:text-text-secondary-dark text-sm font-bold leading-normal transition-all duration-200">
+<span class="truncate">Entrar</span>
+<input class="invisible w-0" name="auth-toggle" type="radio" value="Entrar"/>
+</label>
+</div>
+</div>
+<!-- Form Section -->
+<div class="flex flex-col px-4 gap-4">
+<!-- TitleText Component -->
+<h1 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] text-left">Crie sua conta</h1>
+<!-- ProfileHeader Component Modified -->
+<div class="flex items-center gap-4">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-20 w-20 bg-gray-200 dark:bg-input-bg-dark flex items-center justify-center border border-dashed border-gray-300 dark:border-border-dark" data-alt="Placeholder for user avatar upload.">
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark !text-3xl" data-icon="camera_alt">camera_alt</span>
+</div>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em]">Adicionar Foto</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">Opcional</p>
+</div>
+</div>
+<!-- InputField Component - Nome -->
+<div class="relative flex flex-col">
+<label class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-1" for="name">Nome</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-text-secondary-light dark:text-text-secondary-dark" data-icon="person">person</span>
+<input class="w-full rounded-lg border border-border-light dark:border-border-dark bg-input-bg-light dark:bg-input-bg-dark h-12 pl-10 pr-4 text-text-light dark:text-text-dark placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark focus:border-secondary dark:focus:border-accent focus:ring-secondary dark:focus:ring-accent transition-colors duration-200" id="name" placeholder="Digite seu nome" type="text"/>
+</div>
+</div>
+<!-- InputField Component - Email -->
+<div class="relative flex flex-col">
+<label class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-1" for="email">E-mail (opcional)</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-text-secondary-light dark:text-text-secondary-dark" data-icon="mail">mail</span>
+<input class="w-full rounded-lg border border-border-light dark:border-border-dark bg-input-bg-light dark:bg-input-bg-dark h-12 pl-10 pr-4 text-text-light dark:text-text-dark placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark focus:border-secondary dark:focus:border-accent focus:ring-secondary dark:focus:ring-accent transition-colors duration-200" id="email" placeholder="Digite seu e-mail" type="email"/>
+</div>
+</div>
+<!-- PrimaryButton Component -->
+<button class="flex w-full min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-white text-base font-bold leading-normal tracking-wide shadow-lg shadow-primary/30 hover:bg-primary/90 transition-all duration-200 mt-4">
+<span class="truncate">Cadastrar</span>
+</button>
+<!-- SecondaryLink Component -->
+<a class="text-center text-sm font-medium text-secondary dark:text-accent py-4 hover:underline" href="#">Problemas para entrar?</a>
+</div>
+</div>
+</div>
+</body></html>
