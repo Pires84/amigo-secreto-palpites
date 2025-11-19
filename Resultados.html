@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Registrar Sorteio Oficial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f20d0d",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex h-16 w-full items-center justify-between border-b border-slate-200/80 bg-background-light/80 px-4 backdrop-blur-sm dark:border-slate-800/80 dark:bg-background-dark/80">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-slate-900 dark:text-slate-100">Registrar Sorteio Oficial</h1>
+<div class="h-10 w-10"></div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 px-4 pb-32 pt-6">
+<p class="mb-6 text-center text-base font-normal text-slate-600 dark:text-slate-400">Associe cada participante ao seu respectivo amigo secreto.</p>
+<div class="space-y-3">
+<!-- List Item 1 -->
+<div class="flex min-h-[72px] items-center gap-4 rounded-xl bg-white p-3 shadow-sm dark:bg-slate-900/50">
+<div class="flex flex-1 items-center gap-4">
+<img class="h-14 w-14 rounded-full object-cover" data-alt="Profile picture of Ana Beatriz" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1FOTAj--IuuFvUQypcBiKMRWt51PEXuesH3YYfDhGf0f-Y8CgTWchp-dSayL2QQXMSj6GEBP-J-NleHcszzvzAxJZkJOVQ42Mrd1M1C_93Kq-AIfxG19Q6YZiBIeBgMtbb4do1mu2U1tt3T2fVAKyktyRFqRK2kFfxZyCYIQQ9JYwfpQCL00LAKKHhOHJ1vG2et82ZpYedhA3KBYHsidSU_YOk1Tmqt4l534C2mKm7RHXsqcnm4aze5NBM6QjhWbOHvpdVm2N2_Y6"/>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium text-slate-800 dark:text-slate-200">Ana Beatriz</p>
+<p class="text-sm font-normal text-slate-500 dark:text-slate-400">Sorteou...</p>
+</div>
+</div>
+<div class="shrink-0">
+<button class="flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-primary dark:bg-primary/20">
+                            Selecionar
+                            <span class="material-symbols-outlined !text-base">expand_more</span>
+</button>
+</div>
+</div>
+<!-- List Item 2 -->
+<div class="flex min-h-[72px] items-center gap-4 rounded-xl bg-white p-3 shadow-sm dark:bg-slate-900/50">
+<div class="flex flex-1 items-center gap-4">
+<img class="h-14 w-14 rounded-full object-cover" data-alt="Profile picture of Carlos Eduardo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCxP3Izrmtyr2Ka69qYFi5T7v8LXYaDIoF3X0QmwiS3puM8JapPdhoK-8TkMsSiZoVHr8I4gLS0oc6t6m2-z-zXb9XrXbZ7ciVSu9GZdIekjiggi9J-VbYKy32DJj8fsfTifVshgeAfob-uGN33d6ANyvOY4zluZBuMMF3mssy3CxacN0ltvy2MNNowQ9ZGbm4Iuh2joZhRy7EQtArAthCb0P7I8BuUAhtRdc8W_IdQ1sd-I4vYc-wqthDN_hODfa1CfZSpA3BIOG8"/>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium text-slate-800 dark:text-slate-200">Carlos Eduardo</p>
+<p class="text-sm font-normal text-green-600 dark:text-green-400">Sorteou: Daniela Ribeiro</p>
+</div>
+</div>
+<div class="shrink-0">
+<button class="flex items-center justify-center rounded-full bg-green-100 p-2 text-green-600 dark:bg-green-900/50 dark:text-green-400">
+<span class="material-symbols-outlined !text-xl">edit</span>
+</button>
+</div>
+</div>
+<!-- List Item 3 with error state -->
+<div class="flex min-h-[72px] items-center gap-4 rounded-xl border border-red-500/50 bg-white p-3 shadow-sm dark:border-red-500/30 dark:bg-slate-900/50">
+<div class="flex flex-1 items-center gap-4">
+<img class="h-14 w-14 rounded-full object-cover" data-alt="Profile picture of Daniela Ribeiro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB65eAlJbondMyxmK8ff0knYOC4Ccuf23GCPxtevAni26w-A3y40rX1E1Bdow8XOwpkJbbqZJhpiDRAqoCh3vvNZUi_OEX56OSjfKqFCVOvlLsI8K_ZsxS1YnOgKqBpGN_Y-qTLjq7P56X4Y7M9kLfI7ZTLUheKzCywfq4pqSCa-As0L5u4ic0xolXu0WFBQlyJvI6p7tSAlYZXYlMt2M098YyeIqH9wWuAKnWw-PuwGSPEy4hCZSI5G7BidXiIXffx0PIR1EOIYhB7"/>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium text-slate-800 dark:text-slate-200">Daniela Ribeiro</p>
+<p class="text-sm font-normal text-red-600 dark:text-red-400">Erro: Já foi selecionado</p>
+</div>
+</div>
+<div class="shrink-0">
+<button class="flex items-center gap-2 rounded-full bg-red-100 px-4 py-2 text-sm font-semibold text-red-600 dark:bg-red-900/40">
+                            Corrigir
+                            <span class="material-symbols-outlined !text-base">error</span>
+</button>
+</div>
+</div>
+<!-- List Item 4 -->
+<div class="flex min-h-[72px] items-center gap-4 rounded-xl bg-white p-3 shadow-sm dark:bg-slate-900/50">
+<div class="flex flex-1 items-center gap-4">
+<img class="h-14 w-14 rounded-full object-cover" data-alt="Profile picture of Fernando Lima" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBypWX53xs9y09-NwU7vEjb7RaWVaCtdc0VBK7AmD1MC0kSc3ZhDO7JXiS2LbFsHJHgKsW-tCkgAZ9eJ80RSFPWFEYF7meT8DGY2-Tje3Bd0QmXCI82NON0t8Mk7vHILkEQbM5dp-k99DHAdMPZpHE33eHqlp1ECGHlqJBOn72EI7ztnuYNhjlk4b2oSJEBii6NCIqXV4LxPG2rMqM7ozXHb31PAWmCtJuM3WI1evy3yyyBZEK7DJGTWGsRp_4dapdc5JLah480Bkm6"/>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium text-slate-800 dark:text-slate-200">Fernando Lima</p>
+<p class="text-sm font-normal text-slate-500 dark:text-slate-400">Sorteou...</p>
+</div>
+</div>
+<div class="shrink-0">
+<button class="flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-primary dark:bg-primary/20">
+                            Selecionar
+                            <span class="material-symbols-outlined !text-base">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Floating Action Button -->
+<div class="fixed bottom-24 left-0 w-full px-4 pb-4 sm:bottom-4">
+<button class="h-12 w-full rounded-xl bg-primary text-base font-bold text-white shadow-lg shadow-primary/30 transition-all hover:bg-primary/90 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:shadow-none dark:disabled:bg-slate-700" disabled="">Salvar Sorteio</button>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 z-10 flex h-20 w-full items-center justify-around border-t border-slate-200/80 bg-background-light/80 backdrop-blur-sm dark:border-slate-800/80 dark:bg-background-dark/80">
+<a class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-xs">Grupo</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">mystery</span>
+<span class="text-xs">Palpites</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">leaderboard</span>
+<span class="text-xs">Ranking</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary dark:text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">admin_panel_settings</span>
+<span class="text-xs font-bold">Admin</span>
+</a>
+</nav>
+<!-- Modal backdrop - hidden by default -->
+<div class="fixed inset-0 z-20 hidden items-center justify-center bg-black/50 backdrop-blur-sm">
+<!-- Modal panel -->
+<div class="mx-4 flex w-full max-w-sm flex-col gap-4 rounded-xl bg-white p-6 shadow-xl dark:bg-slate-800">
+<div class="flex flex-col items-center text-center">
+<div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary dark:bg-primary/20">
+<span class="material-symbols-outlined">task_alt</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-100">Confirmar Sorteio?</h3>
+<p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Esta ação é irreversível e irá registrar oficialmente o resultado do amigo secreto para todos.</p>
+</div>
+<div class="mt-2 grid grid-cols-2 gap-3">
+<button class="h-11 rounded-lg bg-slate-100 text-sm font-semibold text-slate-700 dark:bg-slate-700 dark:text-slate-200">Cancelar</button>
+<button class="h-11 rounded-lg bg-primary text-sm font-semibold text-white">Confirmar</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>
