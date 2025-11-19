@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ranking Final</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1E8449", // Verde Natalino
+              "secondary": "#C0392B", // Vermelho Festivo
+              "accent": "#F1C40F", // Dourado
+              "background-light": "#F8F9FA",
+              "background-dark": "#1A1C19",
+              "text-light": "#34495E",
+              "text-dark": "#E1E3DF",
+              "text-muted-light": "#707972",
+              "text-muted-dark": "#B9C9BE"
+            },
+            fontFamily: {
+              "display": ["Spline Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.75rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex h-16 items-center border-b border-gray-200/80 dark:border-white/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4">
+<h1 class="text-xl font-bold text-text-light dark:text-text-dark flex-1 text-center">Pódio dos Palpites</h1>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pb-24 px-4 pt-6">
+<div class="flex flex-col gap-4">
+<!-- Winner Card -->
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-[0_4px_12px_rgba(241,196,15,0.2)] bg-accent/10 dark:bg-accent/20 border-2 border-accent">
+<div class="flex w-full grow flex-col items-stretch justify-center gap-2 py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-accent text-2xl">emoji_events</span>
+<p class="text-accent text-sm font-bold leading-normal">Vencedor(a)!</p>
+</div>
+<p class="text-text-light dark:text-text-dark text-2xl font-bold leading-tight tracking-[-0.015em]">Juliana Costa</p>
+<div class="flex items-end gap-3 justify-between mt-1">
+<div class="flex flex-col gap-1">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">10 acertos</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal">Prêmio: R$ 120</p>
+</div>
+<img class="h-16 w-16 rounded-full object-cover" data-alt="Foto de Juliana Costa, a vencedora." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDye49ze2PaEqsR7nH0iq7sCOjYiUKkrL09RWwwJw13QgajuhFrOjzlhFCkRgANKyGkJzXjpJNhNzioAykRHI6QE6vn1txR9Io4LOKHdKMMv-l6F11f8C-a8vbVIpOlvmrh7tSXUX2SmEYr8AS4zeEQY3Yk4e1ZRcdlr8PjyK4INf766hUNplZU3MyRhrsVPi4gW0bdYlG8tcdIu8vYy66_UbFSBWdhrjEhpYzbjqOgqqMStpU1brGUQRTPr6LrFA5nApD3jjWcB2I"/>
+</div>
+</div>
+</div>
+<!-- Spacer -->
+<div class="h-4"></div>
+<!-- List Item 2nd Place -->
+<div class="flex items-center gap-4 bg-white dark:bg-text-light/5 px-4 min-h-[72px] py-2 justify-between rounded-lg shadow-sm">
+<div class="flex items-center gap-4">
+<img class="object-cover h-14 w-14 rounded-full" data-alt="Foto de Roberto Almeida" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8QF2B_9MB71IYcr-9dP5VQl79wpY_OEbKi5J7YOTAwzCvX9ffbRMHH7q-v86g_VV6O3XTzWATN3OialuP6Pu9nuNMUJEzSeE-VcVUwoAAWIQ_uuArxKAIc2NTLlnIzV6iMy54n8ncKXjh_EXD8ojLOOtqIdmyNYcN1FazK2shq635lp_jtT7GSBE9T3kCgFiv73uK8g86de2hnMbqSoUTxLGIdD-a5Y-APsr_LFQ88E4yVz0v6mEYcjxPKa9b811PC6zZW3p2BphY"/>
+<div class="flex flex-col justify-center">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal line-clamp-1">Roberto Almeida</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal line-clamp-2">8 acertos</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-text-light dark:text-text-dark text-lg font-bold">2º</p></div>
+</div>
+<!-- List Item 3rd Place -->
+<div class="flex items-center gap-4 bg-white dark:bg-text-light/5 px-4 min-h-[72px] py-2 justify-between rounded-lg shadow-sm">
+<div class="flex items-center gap-4">
+<img class="object-cover h-14 w-14 rounded-full" data-alt="Foto de Carla Dias" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgRUs1uWJfWj1L6KWttGZv1EXtaE3Gj-dJTQwf215WF8V2eTse8aeRATUlG-1UKHt0yYN3ueEwryRpeptHnn95Drsf2QaWy_Hxc3BIJLn_dn1g9mc894l3pU4hbcV750inMiadHGtVy8STC0Nt1UJkxHiGvTF3stVB3wRxYuLJ8PTMk3W34nwXN5IDVJWA5TV50JXIzRk4BDVo6cr7P-0O5QvhckIw6IEWVAJn2cXY_LGFO3XnYkxGAPJW7rTIxWVKHCpeciXZiVdm"/>
+<div class="flex flex-col justify-center">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal line-clamp-1">Carla Dias</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal line-clamp-2">7 acertos</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-text-light dark:text-text-dark text-lg font-bold">3º</p></div>
+</div>
+<!-- List Item 4th Place -->
+<div class="flex items-center gap-4 bg-white dark:bg-text-light/5 px-4 min-h-[72px] py-2 justify-between rounded-lg shadow-sm">
+<div class="flex items-center gap-4">
+<img class="object-cover h-14 w-14 rounded-full" data-alt="Foto de Marcos Lima" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsQ5dGkq0qNIPnqM6mHuXRgGPNE6ISIxbrhQTfsXesMlzevWBlfxFmqWXOTohBjczsmphAtE6rlAq8bpvsMR1f9bXA69CW1hz3qrG2ORH4s2YEt-byAtivnRnXsb-yXFK4DB4yjJQyVdiNw__5eDHYi1FQF1ifPpZG5wJ4WcNG9w9M8z5mR8tTjRYqZDgnyKUbtetfkioLR2HEfcUSEKZzZXIHcRJKlnZCUH5yVPURVkheldV5brdbdopN7lgPd_o6KNnQngHiGXjU"/>
+<div class="flex flex-col justify-center">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal line-clamp-1">Marcos Lima</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal line-clamp-2">5 acertos</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-text-light dark:text-text-dark text-lg font-bold">4º</p></div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-10 flex h-20 items-center justify-around border-t border-gray-200/80 dark:border-white/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<a class="flex flex-col items-center gap-1 text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Início</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="text-xs font-medium">Palpites</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary dark:text-primary font-bold" href="#">
+<span class="material-symbols-outlined fill">emoji_events</span>
+<span class="text-xs font-bold">Ranking</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Perfil</span>
+</a>
+</nav>
+</div>
+</body></html>
