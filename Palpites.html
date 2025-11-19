@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Meus Palpites - Amigo Secreto</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#D92E2E", // Red
+            "secondary": "#004D40", // Dark Green
+            "gold": "#FFC107",
+            "background-light": "#FAFAFA",
+            "background-dark": "#1a1a1a",
+            "text-light": "#111827",
+            "text-dark": "#f3f4f6",
+            "text-subtle-light": "#6b7280",
+            "text-subtle-dark": "#9ca3af",
+            "border-light": "#e5e7eb",
+            "border-dark": "#374151"
+          },
+          fontFamily: {
+            "display": ["Spline Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative mx-auto flex h-auto min-h-screen w-full max-w-md flex-col overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex items-center justify-between border-b border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 p-4 pb-3 backdrop-blur-sm">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark text-2xl">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold leading-tight tracking-[-0.015em]">Meus Palpites</h1>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark text-2xl">help_outline</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pb-32">
+<!-- Headline Text -->
+<div class="px-4 pt-6 pb-1">
+<h2 class="text-3xl font-bold leading-tight tracking-tight text-secondary dark:text-white">Faça seus Palpites</h2>
+</div>
+<!-- Body Text -->
+<div class="px-4 pb-6">
+<p class="text-base font-normal leading-normal text-text-subtle-light dark:text-text-subtle-dark">Selecione quem você acha que tirou cada participante.</p>
+</div>
+<!-- List of Guesses -->
+<div class="flex flex-col gap-2 px-2">
+<!-- List Item: Unselected -->
+<div class="flex cursor-pointer items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-4 shadow-sm transition-shadow hover:shadow-md">
+<img class="h-14 w-14 rounded-full object-cover" data-alt="Avatar of Ana Clara" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRte3ATbapeHtKnDbSc6krprygyigCsGFGn0r4-g6moBT08TvzqHG1vjlUPDoubxRId_pMj9P0kB0Tz4xC_E87iafH9pFOnk-PEiqP92m9tLXW61UDIUyaAqcykEj03RvCQ0xW9FGpurB47jIEPtQtjHKhuON2o0epswJqGupYzE4Znzi3mZkPv4d048DuUJHRpbJAeBtm0eiREIRHAKkesupT9X52e41h97y_n_wNiMkzYslGT98aPVs0ih422j1uc018aJDhnfpr"/>
+<div class="flex-1">
+<p class="text-base font-medium leading-normal">Quem tirou a Ana Clara?</p>
+<p class="text-sm font-normal leading-normal text-text-subtle-light dark:text-text-subtle-dark">Selecione um nome...</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-subtle-light dark:text-text-subtle-dark">expand_more</span>
+</div>
+</div>
+<!-- List Item: Selected -->
+<div class="flex cursor-pointer items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-4 shadow-sm transition-shadow hover:shadow-md">
+<img class="h-14 w-14 rounded-full object-cover" data-alt="Avatar of Bruno Silva" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkwF873WE7ne3k6m-HcaXqiPBJOePNRMoz7P2IF2G27V4UFe28AmR5wg-v6rEA4RIn2FITqjziQIhFteCEEsYgZI_bSlwKIoQQdNuCUBv8aYqo9tdnRRsiHIQKtwwIpHF89fH5-i-x_yExopoFecphDEfsiYGiE5eLK-alO_-v-o5hcigW0E4BOlOv58720jqsFjQljpOYeibFILMsahvh5GFXy-hkp90Kf1ickdsTMnEuHqQjhLImjyS7fSL2wEDpSOdVGsyQ96cf"/>
+<div class="flex-1">
+<p class="text-base font-medium leading-normal">Quem tirou o Bruno Silva?</p>
+<p class="text-sm font-semibold leading-normal text-secondary dark:text-green-400">Maria Luiza</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+</div>
+</div>
+<!-- List Item: Unselected -->
+<div class="flex cursor-pointer items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-4 shadow-sm transition-shadow hover:shadow-md">
+<img class="h-14 w-14 rounded-full object-cover" data-alt="Avatar of Carolina Dias" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtMDnCZdZJYDZpy2uloD1_8baXUM4DbgWsAIvejx9XJUpGu-8r2FeiZmeJfdsr84-5UaZ4p1SIWusWC7xOiEzBw6cDBSqvwYSkTgfsLwO8fjg1g_6A4IRWzm7G81uAmKGI-WmmoWqLtUcTko9esXrlDYEFkywozVDTV9Ujh5uBv2fhKmkLCuWko-5x8Lk0qDk3lfuanB5IrQMmqODswmWMYXVHUV5oNjNcaB136UElCC-SOGUyjXQ8WqbWPMueyFjFsHbd5XexNt7k"/>
+<div class="flex-1">
+<p class="text-base font-medium leading-normal">Quem tirou a Carolina Dias?</p>
+<p class="text-sm font-normal leading-normal text-text-subtle-light dark:text-text-subtle-dark">Selecione um nome...</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-subtle-light dark:text-text-subtle-dark">expand_more</span>
+</div>
+</div>
+<!-- List Item: Selected -->
+<div class="flex cursor-pointer items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-4 shadow-sm transition-shadow hover:shadow-md">
+<img class="h-14 w-14 rounded-full object-cover" data-alt="Avatar of Felipe Mendes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFyih0JuAWu1O-m7-FWa2zOVOl_ZH3DOt60_wzuoFVIQIz9dC3ugVpTqSKffHX8Hp28GcY8qMTkZN0eiEHZjV4tEw213aB5R_RNBNUhnc6VHAvQtD8_xpm3Sugq3qo27QCbWTCTym3uoHB0XQXIUYf5hMe3dEkMjQdznInI8j3HNRx8FIKReDtt2JZNljCtPRfbbVWfBQlER-NUCkLNTqRp3VP-XsJt8ZWumvewEkC8Dr1HU2ePjZL567aqLQF44mtJMCcCqImmfey"/>
+<div class="flex-1">
+<p class="text-base font-medium leading-normal">Quem tirou o Felipe Mendes?</p>
+<p class="text-sm font-semibold leading-normal text-secondary dark:text-green-400">João Pedro</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+</div>
+</div>
+<!-- List Item: Unselected -->
+<div class="flex cursor-pointer items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-4 shadow-sm transition-shadow hover:shadow-md">
+<img class="h-14 w-14 rounded-full object-cover" data-alt="Avatar of Maria Luiza" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPynSptyfTMAFWGByZsIscEDdZiJE1uuP_YJS3nfB7yzdZcnCrO8Ns7IusHRYJ0kyidHQcIPkkYStQ_oQ98POeFgsUncVbrWdVUyqy_5ziXofDXePlY4SqQyQikRxli5k_CwLFlW9Mh2N024oG7u3oS6BB1VYJF9LG6mYzNJzyyHCBXIPo6XS2dVmnWcl3TtIw-4rlEhT4wTJbgy3pB7467_iUeT2FtkVplpCyFMtTwqoF0-FZPtymCPVuAgJDjwNq4wpCr4QqwzDD"/>
+<div class="flex-1">
+<p class="text-base font-medium leading-normal">Quem tirou a Maria Luiza?</p>
+<p class="text-sm font-normal leading-normal text-text-subtle-light dark:text-text-subtle-dark">Selecione um nome...</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-subtle-light dark:text-text-subtle-dark">expand_more</span>
+</div>
+</div>
+</div>
+</main>
+<!-- CTA Button -->
+<div class="pointer-events-none fixed bottom-0 left-0 right-0 z-10 mx-auto w-full max-w-md">
+<div class="p-4">
+<button class="pointer-events-auto w-full cursor-pointer rounded-xl bg-primary/50 dark:bg-primary/60 px-6 py-4 text-base font-bold text-white transition-all" disabled="">
+          Salvar Meus Palpites
+        </button>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-20 mx-auto w-full max-w-md border-t border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
+<div class="flex h-20 items-center justify-around">
+<a class="flex flex-col items-center gap-1 text-text-subtle-light dark:text-text-subtle-dark" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-xs font-medium">Grupo</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary dark:text-red-400" href="#">
+<span class="material-symbols-outlined">card_giftcard</span>
+<span class="text-xs font-bold">Palpites</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-subtle-light dark:text-text-subtle-dark" href="#">
+<span class="material-symbols-outlined">leaderboard</span>
+<span class="text-xs font-medium">Ranking</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-subtle-light dark:text-text-subtle-dark" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Perfil</span>
+</a>
+</div>
+</nav>
+</div>
+</body></html>
