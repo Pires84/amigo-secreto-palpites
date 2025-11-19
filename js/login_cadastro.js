@@ -1,40 +1,32 @@
-// login_cadastro.js
-// ------------------------------
-// Alternância entre "Cadastrar" e "Entrar"
-// E navegação com atributos data-nav
-// ------------------------------
+// -------------------- LOGIN / CADASTRO TOGGLE --------------------
 
 document.addEventListener("DOMContentLoaded", () => {
-
-    // --- Navegação ---
-    const navButtons = document.querySelectorAll("[data-nav]");
-    navButtons.forEach(btn => {
-        btn.addEventListener("click", () => {
-            const destino = btn.getAttribute("data-nav");
-            if (destino) window.location.href = destino;
-        });
-    });
-
-    // --- Alternância de abas ---
     const radios = document.querySelectorAll("input[name='auth-toggle']");
-    const titulo = document.querySelector("h1"); // "Crie sua conta" / "Entrar na sua conta"
-    const botaoPrincipal = document.querySelector("button"); // texto muda de Cadastrar ↔ Entrar
+    const title = document.querySelector("h1");
+    const btn = document.querySelector("button span");
+    const emailLabel = document.querySelector("label[for='email']");
+    const avatarSection = document.querySelector(".flex.items-center.gap-4"); // foto
 
-    function atualizarFormulario() {
-        const modo = document.querySelector("input[name='auth-toggle']:checked").value;
-
-        if (modo === "Cadastrar") {
-            titulo.textContent = "Crie sua conta";
-            botaoPrincipal.textContent = "Cadastrar";
+    function updateForm(mode) {
+        if (mode === "Cadastrar") {
+            title.textContent = "Crie sua conta";
+            btn.textContent = "Cadastrar";
+            emailLabel.textContent = "E-mail (opcional)";
+            avatarSection.style.display = "flex";   // mostra foto
         } else {
-            titulo.textContent = "Entrar na sua conta";
-            botaoPrincipal.textContent = "Entrar";
+            title.textContent = "Entrar";
+            btn.textContent = "Entrar";
+            emailLabel.textContent = "E-mail";
+            avatarSection.style.display = "none";   // esconde foto
         }
     }
 
     radios.forEach(radio => {
-        radio.addEventListener("change", atualizarFormulario);
+        radio.addEventListener("change", () => {
+            updateForm(radio.value);
+        });
     });
 
-    atualizarFormulario(); // inicialização
+    // Inicialização
+    updateForm(document.querySelector("input[name='auth-toggle']:checked")?.value);
 });
